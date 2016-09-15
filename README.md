@@ -43,6 +43,21 @@ writable.write({
 })
 ```
 
+## API
+
+### const writable = bulkInsert(options)
+
+Options:
+
+- `limit<Integer>: 1000` - maximum # of documents to insert at one time
+- `interval<Number|String>: '300ms'` - minimum interval between flushes,
+- `onError<Function>` - optional function that handles `flush()` errors
+- `flush<Function>` - a function with the signature `(data<Array>) => {}`
+
+### writable.write(data)
+
+Write data to the stream.
+
 [npm-image]: https://img.shields.io/npm/v/bulk-insert.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/bulk-insert
 [travis-image]: https://img.shields.io/travis/jonathanong/bulk-insert/master.svg?style=flat-square
