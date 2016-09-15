@@ -7,5 +7,5 @@ sudo: false
 script:
 - npm run lint
 - npm run test-cov
-- npm run bench
+after_success:
   - bash <(curl -s https://codecov.io/bash)
