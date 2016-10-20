@@ -1,6 +1,6 @@
 {
   "name": "bulk-insert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A writable stream that batches",
   "scripts": {
     "lint": "standard --fix",
