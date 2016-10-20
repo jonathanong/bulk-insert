@@ -4,8 +4,8 @@
   "description": "A writable stream that batches",
   "scripts": {
     "lint": "standard --fix",
-    "test": "jest",
-    "test-cov": "jest --coverage"
+    "test": "jest --env node --bail",
+    "test-cov": "jest --env node --coverage"
   },
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "ms": "^0.7.1"
   },
   "devDependencies": {
-    "jest": "^15.1.1",
+    "jest": "^16.0.1",
     "standard": "^8.0.0"
   },
   "files": [
