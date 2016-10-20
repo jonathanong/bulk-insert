@@ -58,6 +58,15 @@ Options:
 
 Write data to the stream.
 
+### writable.flush()
+
+Flush all the data immediately.
+
+### writable.close()
+
+Flushes immediately and unrefs all future timers, allowing the process to exit gracefully.
+Even though you are still able to write to the stream after you've closed it, you should not.
+
 [npm-image]: https://img.shields.io/npm/v/bulk-insert.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/bulk-insert
 [travis-image]: https://img.shields.io/travis/jonathanong/bulk-insert/master.svg?style=flat-square
